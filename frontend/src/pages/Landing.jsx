@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import {
   Code2,
   Brain,
@@ -209,12 +210,12 @@ function Navbar() {
         </nav>
 
         <div className="hidden md:block">
-          <a
-            href="#enroll"
-            className={`rounded-full bg-indigo-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm shadow-indigo-200 transition hover:bg-indigo-700 ${FOCUS_RING}`}
+          <Link
+            to="/login"
+            className="rounded-full bg-indigo-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm shadow-indigo-200 transition hover:bg-indigo-700"
           >
-            Enroll Now
-          </a>
+            Get Started
+          </Link>
         </div>
 
         <button
@@ -353,12 +354,12 @@ function Hero() {
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-4">
-            <a
-              href="#pricing"
-              className={`inline-flex items-center gap-2 rounded-full bg-indigo-600 px-6 py-3.5 text-sm font-semibold text-white shadow-lg shadow-indigo-200 transition hover:bg-indigo-700 ${FOCUS_RING}`}
-            >
-              Enroll Now <ArrowRight size={16} />
-            </a>
+            <Link
+                to="/login"
+                className="inline-flex items-center gap-2 rounded-full bg-indigo-600 px-6 py-3.5 text-sm font-semibold text-white shadow-lg shadow-indigo-200 transition hover:bg-indigo-700"
+            >       
+                Get Started <ArrowRight size={16} />
+            </Link>
             <a
               href="#program"
               className={`rounded-full border border-slate-200 px-6 py-3.5 text-sm font-semibold text-slate-700 transition hover:border-slate-300 hover:bg-slate-50 ${FOCUS_RING}`}
@@ -784,12 +785,12 @@ function FinalCTA() {
           interview slot stays 1:1.
         </p>
         <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
-          <a
-            href="#pricing"
-            className="rounded-full bg-white px-7 py-3.5 text-sm font-semibold text-indigo-700 shadow-sm transition hover:bg-indigo-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-indigo-600"
+          <Link
+            to="/login"
+            className="rounded-full bg-white px-7 py-3.5 text-sm font-semibold text-indigo-700 shadow-sm transition hover:bg-indigo-50"
           >
-            Enroll Now
-          </a>
+            Get Started
+          </Link>
           <a
             href="#program"
             className="rounded-full border border-white/40 px-7 py-3.5 text-sm font-semibold text-white transition hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-indigo-600"
@@ -823,7 +824,7 @@ function Footer() {
 
 /* ----------------------------------- app --------------------------------------- */
 
-export default function TechLearnPlacementSprintPreview() {
+export default function Landing() {
   return (
     <div style={fontBody} className="min-h-screen bg-white antialiased">
       <style>{`
