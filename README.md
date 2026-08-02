@@ -70,8 +70,8 @@ Create a `.env` file inside `backend`:
 
 ```env
 PORT=5000
-MONGO_URI=YOUR_MONGODB_URI
-JWT_SECRET=YOUR_SECRET
+MONGO_URI=YOUR_MONGOmongodb+srv://saatvik12negi_db_user:Zmn6gJ6uNDXTWUwH@techlearn.mlkvasb.mongodb.net/techlearn?appName=techlearnDB_URI
+JWT_SECRET=techlearnsecret
 ```
 
 ## 👨‍💻 Author
@@ -79,4 +79,5 @@ JWT_SECRET=YOUR_SECRET
 **Saatvik Negi**
 
 GitHub: https://github.com/negisaatvik3-bit
+
 LinkedIn: https://www.linkedin.com/in/saatvik-negi-549b023b8/
